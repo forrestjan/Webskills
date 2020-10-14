@@ -18,6 +18,7 @@ main {
   background-color: #ffff;
   width: 128rem;
   margin: 0 auto;
+  position: relative;
 }
 header {
   border-top: 4rem solid #146;
@@ -63,4 +64,17 @@ h2,
 h3,
 p {
   margin-bottom: 1em;
+}
+section {
+  overflow: auto;
+  background: linear-gradient(90deg, #146 0, #146 20%, #ffff 20%);
+}
+main > aside {
+  background-color: red;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 4.5rem;
+  left: 94.5rem;
 }
