@@ -46,8 +46,9 @@ ul {
   text-align: justify;
 }
 
-blockquote {
-  font-size: 2.5rem;
+blockquote,
+blockquote .fnRef {
+  font-size: 2.6rem;
   font-family: "Tangerine", cursive;
   color: brown;
 }
