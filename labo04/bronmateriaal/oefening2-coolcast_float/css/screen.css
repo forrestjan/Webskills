@@ -17,4 +17,37 @@ body {
 main {
   background-color: #ffff;
   width: 128rem;
+  margin: 0 auto;
+}
+header {
+  border-top: 4rem solid #146;
+  border-bottom: 0.2rem solid #000;
+}
+nav {
+  background-color: #146;
+  width: 20%;
+}
+nav a {
+  color: #ccc;
+}
+article {
+  border-right: 0.2rem solid red;
+  width: 60%;
+}
+aside {
+  width: 20%;
+}
+footer {
+  border-top: 0.2rem solid #000;
+  text-align: center;
+}
+
+header {
+  padding-top: 2.5rem;
+  padding-left: 1rem;
+}
+article,
+nav,
+aside {
+  padding: 3rem;
 }
