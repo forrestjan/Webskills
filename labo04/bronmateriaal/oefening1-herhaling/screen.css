@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
+
+/* CSS Document */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f5f5dc;
+  font-family: "Dosis", sans-serif;
+}
+main {
+  margin: 0 10%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  border: 1px dashed #000;
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+p,
+ul {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+blockquote {
+  font-size: 1.2rem;
+}
+
+nav > ul {
+  list-style-type: circle;
+}
+
+nav > ul ul {
+  list-style-type: square;
+}
+
+nav > ul ul ul {
+  list-style-type: none;
+}
+
+nav a {
+  color: #75756a;
+}
+
+nav a:active {
+  font-style: italic;
+}
+
+p {
+  color: #333;
+}
+
+p:nth-child(even) {
+  color: #666;
+}
+
+p::first-letter {
+  font-weight: bold;
+}
+
+.fnRef {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}

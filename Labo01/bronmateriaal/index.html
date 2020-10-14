@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML handleiding</title>
+  </head>
+  <body>
+    <h1>Skills: HTML basics</h1>
+
+    <h2>Wat is HTML?</h2>
+
+    <p>
+      is een afkorting voor Hypertext Markup Language.<br />
+      Zoals de term al zegt is het een opmaak taal, het vertelt je browser door
+      middel van html tags hoe de pagina moet worden weergegeven op het scherm.
+      In de meeste eenvoudige vorm kan HTML gebruikt worden om tekst in
+      paragrafen onder te verdelen met koppen en stukken tekst die nadruk moeten
+      krijgen. Essentieel is dat HTML hypertekst mogelijk maakt, waardoor in een
+      document verwijzingen kunnen worden ingebouwd naar andere documenten, dit
+      zijn hyperlinks.
+    </p>
+
+    <h2>Lijsten</h2>
+
+    <p>
+      worden onder andere gebruikt voor opsommingen, maar navigatie-elementen
+      zullen we ook meestal in een lijst plaatsen (SEO). Elke lijst wordt
+      opgebouwd uit verschillende listitems (&lt;li&gt;).
+    </p>
+
+    <p>Er bestaan 3 soorten lijsten:</p>
+
+    <ul>
+      <li>Unordered list</li>
+      <li>Ordered list</li>
+      <li>Definition list</li>
+    </ul>
+    <p>
+      We kunnen de verschillende lijsten ook combineren en zo geneste lijsten
+      maken.
+    </p>
+
+    <h2>Tabellen</h2>
+
+    <p>
+      worden gebruikt om data te structureren (en dus niet voor de layout!). Een
+      tabel bestaat uit verschillende rijen of table rows (
+      <tr>
+        ) en elke rij is opgebouwd uit verschillende cellen of table data (
+        <td>
+          ). eenvoudige tabel samenvoegen van cellen opdeling van een tabel
+          uitgebreide tabel
+        </td>
+      </tr>
+    </p>
+
+    <h2>Commentaar toevoegen</h2>
+
+    <p>
+      hebben ook de mogelijkheid om commentaar toe te voegen. Deze
+      commentaarregels zullen in de browser niet getoond worden.
+      Commentaarregels kunnen helpen om de code te verduidelijken. Commentaar
+      toevoegen doe je met volgende code: &lt;-- dit is commentaar --&gt;
+    </p>
+
+    <h2>Hyperlinks</h2>
+
+    <p>
+      attributen kunnen we extra informatie aan tags meegeven. Attributen
+      krijgen een waarde mee die tussen dubbele quotes geschreven worden. Via
+      het attribuut href kunnen we bijvoorbeeld de bestemming van hyperlinks
+      bepalen.
+    </p>
+
+    <h3>Linken naar een andere webpagina</h3>
+
+    <p>
+      de tag a en basisattribuut href kunnen we een hyperlink leggen naar een
+      andere webpagina. Gebruik hiervoor volgende code. &lt;a
+      href=&quot;http://www.howest.be&quot;&gt;Howest website&lt;/a&gt;
+      Voorbeeld: Howest website &lt;a
+      href=&quot;ftp://www.howest.be&quot;&gt;FTP-Howest&lt;/a&gt;: Howest
+      FTP-website Voorbeeld: Howest FTP-website
+    </p>
+
+    <h3>Linken naar een interne webpagina</h3>
+
+    <p>
+      Staat het bestand in dezelfde directory als het huidige document, dan hoef
+      je slechts de naam van het bestand op te nemen. Staat het bestand in een
+      subdirectory van de huidige directory, dan geef je eerst de namen van de
+      achtereenvolgende subdirectories met achter elke naam een slash en daarna
+      de naam van het bestand: &lt;a
+      href=&quot;lijsten/orderedList.htm&quot;&gt;geordende lijst&lt;/a&gt;:
+      Link naar geordende lijst Bevindt het bestand zich in een hogere directory
+      dan de huidige, dan neem je voor elke stap omhoog een slash voorafgegaan
+      door twee puntjes op: &lt;a
+      href=&quot;../index.htm&quot;&gt;test&lt;/a&gt;
+    </p>
+
+    <h3>Linken naar interne bookmarks</h3>
+
+    <p>
+      We kunnen ook een link leggen in onze pagina zelf, dit zijn bookmarks.
+      Hiervoor moeten we een id of een identiteit meegeven aan de verschillende
+      onderdelen. Op die manier kunnen we via een bookmark linken naar die
+      bepaalde onderdelen. Om bijvoorbeeld een header een id mee te geven
+      gebruiken we volgende code: &lt;h2
+      id=&quot;titelHyperlinks&quot;&gt;Hyperlinks&lt;/h2&gt; Via een bookmark
+      kunnen we naar dit onderdeel springen: &lt;a
+      href=&quot;#titelHyperlinks&quot;&gt;Spring&lt;/a&gt; naar de titel
+      Hyperlinks We kunnen ook verwijzen naar bookmarks op andere webpagina's:
+      &lt;a href=&quot;tabellen/eenvoudigeTabel.htm#rijtitels&quot;&gt;Spring
+      naar rijtitels van de pagina eenvoudige tabel&lt;/a&gt;
+    </p>
+
+    <h3>Mailen naar een emailadres</h3>
+
+    <p>
+      We kunnen ook een mail versturen. Gebruik hiervoor volgende code. &lt;a
+      href=&quot;mailto:voornaam.naam@howest.be&quot;&gt;Mail naar Voornaam
+      Naam&lt;/a&gt;
+    </p>
+
+    <h2>Tooltip</h2>
+
+    <p>
+      We kunnen ook een tooltip toevoegen. Wanneer je met de cursor over het
+      woord of de woorden gaat zal de tooltip tevoorschijn komen. We gebruiken
+      hiervoor terug een attribuut van de tag a, namelijk 'title'. &lt;a
+      title=&quot;dit is een tooltip&quot;&gt;tooltip&lt;/a&gt;
+    </p>
+
+    <h2>Afbeeldingen</h2>
+
+    <p>
+      Images worden ingevoegd met de unaire &lt;img/&gt;-tag. Deze tag heeft
+      minimaal het attribuut src (source) nodig. Je gebruikt relatieve
+      adressering naar een afbeelding. Voorbeeld: &lt;img
+      src=&quot;images/crash_test_dummy.jpg&quot;/&gt; HTML verwacht een label
+      voor de image via het alt-attribuut. Dit attribuut blijft zichtbaar
+      wanneer de image niet kan worden weergegeven. Je geeft ook best altijd een
+      breedte en hoogte mee. Voorbeeld: &lt;img
+      src=&quot;images/crash_test_dummy.jpg&quot; alt=&quot;Crash test
+      dummy&quot; width=&quot;630&quot; height=&quot;400&quot;/&gt;
+    </p>
+  </body>
+</html>
