@@ -40,14 +40,27 @@ aside {
 footer {
   border-top: 0.2rem solid #000;
   text-align: center;
+  clear: both;
 }
 
 header {
   padding-top: 2.5rem;
   padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 article,
 nav,
-aside {
+section aside {
   padding: 3rem;
+  float: left;
+}
+section aside {
+  padding-top: 8rem;
+  width: 20%;
+}
+li,
+h2,
+h3,
+p {
+  margin-bottom: 1em;
 }
