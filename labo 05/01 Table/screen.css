@@ -1,0 +1,33 @@
+caption {
+  font-style: italic;
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  padding: 0.8rem 3rem 0.8rem 0;
+  text-align: left;
+}
+th,
+td {
+  border-top: 0.1rem solid #ddd;
+}
+thead {
+  border-bottom: 0.2rem solid #ddd;
+}
+tfoot {
+  border-top: 0.2rem solid #ddd;
+  border-bottom: none;
+}
+tfoot td,
+tfoot th {
+  border-bottom: none;
+}
+tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+tbody th,
+tfoot th {
+  padding-left: 0.8rem;
+}
