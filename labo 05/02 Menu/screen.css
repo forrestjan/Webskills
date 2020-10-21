@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+  color: #797979;
+  text-transform: uppercase;
+  line-height: 3em;
+  display: block;
+}
+a.active {
+  background-color: #9f9f9f;
+  color: white;
+}
+a:hover {
+  background-color: #8f8f8f;
+  color: white;
+}
+nav {
+  background-color: #fafafa;
+  color: white;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+li {
+  width: 100%;
+  text-align: center;
+}
