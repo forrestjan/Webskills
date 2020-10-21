@@ -1,0 +1,13 @@
+label {
+  display: block;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+input,
+textarea {
+  padding: 0.5rem;
+  width: 50%;
+}
+input[type="submit"] {
+  background-color: hotpink;
+}
